@@ -1,0 +1,88 @@
+body {
+  background-color: rgba(11, 90, 100, 0.63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Reduce gap to bring arrows closer */
+}
+
+.arrow {
+  height: 50px;
+  /* Reduce size for better spacing */
+  cursor: pointer;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.frame {
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  width: calc(800px * 5);
+  /* Adjust to the number of images */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider {
+  display: flex;
+  width: calc(800px * 5);
+  /* Adjust to the number of images */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+.image {
+  width: 800px;
+  /* Ensure each image fits within the frame */
+  height: 500px;
+  object-fit: cover;
+  /* Ensures images scale properly */
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button.active {
+  background-color: white;
+}
